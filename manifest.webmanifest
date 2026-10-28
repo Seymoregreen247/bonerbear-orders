@@ -1,0 +1,14 @@
+{
+  "name": "Boner Bears by Seymore Green",
+  "short_name": "Boner Bears",
+  "description": "Order Boner Bears for pickup in Roslindale, or wholesale boxes for your store.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#EAF1FA",
+  "theme_color": "#13284A",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
