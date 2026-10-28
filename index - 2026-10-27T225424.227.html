@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boner Bears at Seymore Green · Roslindale</title>
+<meta name="description" content="Order Boner Bears for pickup at Seymore Green, 35 Poplar St, Roslindale. Retail and wholesale. 21+ only.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#13284A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Boner Bears">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:title" content="Boner Bears at Seymore Green">
+<meta property="og:description" content="Order Boner Bears for pickup in Roslindale. Store owners: wholesale boxes, hand-delivered.">
+<meta property="og:image" content="/icons/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#13284A; --navy-2:#1E3A66; --red:#D2232A; --amber:#F2A516; --ice:#EAF1FA; --white:#FFFFFF; --ink:#13284A; --muted:#4A5B78;
+  --display:"Bowlby One", Impact, "Arial Black", sans-serif;
+  --body:"Barlow", "Helvetica Neue", Arial, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--ice);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--red)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+/* HERO — the ballpark */
+.hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden;padding:28px 0 0}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:18px;
+  background:repeating-linear-gradient(90deg,var(--red) 0 28px,var(--white) 28px 56px)}
+.topbar{display:flex;justify-content:space-between;align-items:center;font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:.02em}
+.topbar a{color:var(--white);text-decoration:none;border:2px solid rgba(255,255,255,.35);padding:6px 12px;border-radius:999px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:24px 0 56px}
+.hero h1{font-family:var(--display);font-size:clamp(46px,9vw,88px);line-height:.9;margin:0 0 16px;color:var(--white);
+  text-shadow:4px 4px 0 var(--red)}
+.hero p{font-size:19px;max-width:30ch;margin:0 0 22px;color:#D7E2F3}
+.btn{display:inline-block;font-family:var(--cond);font-weight:700;font-size:20px;letter-spacing:.02em;text-decoration:none;cursor:pointer;
+  background:var(--red);color:var(--white);border:none;padding:14px 26px;border-radius:10px;box-shadow:0 4px 0 #8E1218}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #8E1218}
+.btn.ghost{background:transparent;border:2px solid var(--white);box-shadow:none;margin-left:10px}
+.mascot{width:100%;max-width:360px;justify-self:center}
+.mascot svg{width:100%;height:auto;display:block;animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+section{padding:56px 0}
+h2{font-family:var(--display);font-size:clamp(32px,5vw,46px);line-height:1;margin:0 0 10px;color:var(--navy)}
+.sub{color:var(--muted);margin:0 0 28px;max-width:60ch}
+
+/* PRODUCTS */
+.menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.item{background:var(--white);border:3px solid var(--navy);border-radius:18px;padding:22px;position:relative}
+.item.xl{border-color:var(--red)}
+.item.bliss{border-color:#C2397E}
+.item .tag{position:absolute;top:-14px;left:18px;background:var(--red);color:var(--white);font-family:var(--cond);font-weight:700;font-size:15px;padding:3px 12px;border-radius:6px}
+.item h3{font-family:var(--cond);font-size:28px;line-height:1.05;margin:6px 0 6px}
+.item .desc{color:var(--muted);margin:0 0 16px;font-size:16px}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.price{font-family:var(--display);font-size:34px;color:var(--navy)}
+.price small{font-family:var(--body);font-size:14px;color:var(--muted)}
+.qty{display:flex;align-items:center;border:2px solid var(--navy);border-radius:10px;overflow:hidden}
+.qty button{width:44px;height:44px;border:none;background:var(--navy);color:var(--white);font-size:24px;cursor:pointer}
+.qty output{width:46px;text-align:center;font-weight:700;font-size:20px}
+
+/* ORDER */
+.order{background:var(--white);border-radius:18px;padding:24px;margin-top:26px;border:3px solid var(--navy)}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px dashed var(--navy);padding-bottom:12px;margin-bottom:18px}
+.total span:first-child{font-family:var(--cond);font-weight:700;font-size:22px}
+.total strong{font-family:var(--display);font-size:38px;color:var(--red)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.fields .full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:15px;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;font-size:17px;padding:12px;border:2px solid #B9C7DC;border-radius:10px;background:var(--white);color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--navy);outline:none}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:500;margin:16px 0}
+.check input{width:22px;height:22px;flex:none;margin-top:2px}
+.err{color:var(--red);font-weight:700;min-height:1.4em;margin:6px 0 0}
+.pay{display:none;margin-top:18px;background:var(--ice);border-radius:14px;padding:18px}
+.pay.show{display:block}
+.pay h3{font-family:var(--cond);font-size:26px;margin:0 0 6px}
+.paybtns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.paybtns a{flex:1 1 140px;text-align:center;text-decoration:none;font-family:var(--cond);font-weight:700;font-size:19px;padding:12px;border-radius:10px;color:var(--white)}
+.cash{background:#00A84F}.venmo{background:#008CFF}.paypal{background:#003087}
+
+/* WHOLESALE — the dugout */
+.wholesale{background:var(--navy);color:var(--white)}
+.wholesale h2{color:var(--white)}
+.wholesale .sub{color:#C9D6EA}
+.ws-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}
+.perks{margin:0;padding:0;list-style:none}
+.perks li{padding:14px 0;border-bottom:2px solid var(--navy-2);font-size:18px}
+.perks li b{font-family:var(--cond);font-size:22px;color:var(--amber);display:block}
+.ws-form{background:var(--white);color:var(--ink);border-radius:18px;padding:24px}
+.boxes{display:flex;gap:8px;flex-wrap:wrap}
+.boxes label{flex:1 1 60px;margin:0;cursor:pointer;position:relative}
+.boxes input{position:absolute;opacity:0}
+.boxes span{display:block;text-align:center;font-family:var(--cond);font-weight:700;font-size:20px;border:2px solid var(--navy);border-radius:10px;padding:10px 0}
+.boxes input:checked + span{background:var(--red);border-color:var(--red);color:var(--white)}
+.boxes input:focus-visible + span{outline:3px solid var(--amber)}
+
+.ws-lock{background:var(--white);color:var(--ink);border-radius:18px;padding:24px;max-width:520px;margin:0 auto;text-align:center}
+.ws-lock h3{font-family:var(--cond);font-size:28px;margin:0 0 6px}
+.ws-lock p{margin:0 0 14px;color:var(--muted)}
+#lockForm{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+#lockForm input{flex:1 1 160px;max-width:240px;text-align:center;font-size:22px;letter-spacing:.15em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.tiers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:24px}
+.tier-card{background:var(--navy-2);border-radius:16px;padding:18px}
+.tier-card.xl{box-shadow:inset 0 0 0 3px var(--red)}
+.tier-card h3{font-family:var(--cond);font-size:24px;margin:0 0 10px;color:var(--white)}
+.tier-table{width:100%;border-collapse:collapse;font-size:16px}
+.tier-table th{text-align:left;font-family:var(--cond);color:var(--amber);font-size:15px;padding:6px 4px;border-bottom:2px solid rgba(255,255,255,.2)}
+.tier-table td{padding:8px 4px;border-bottom:1px solid rgba(255,255,255,.12)}
+.tier-table tr.on td{background:var(--amber);color:var(--navy);font-weight:700}
+.tier-note{font-size:14px;color:#C9D6EA;margin:10px 0 0}
+.ws-form{max-width:640px;margin:0 auto}
+.ws-h{font-family:var(--cond);font-size:26px;margin:0 0 10px}
+.ws-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:2px solid #E1E8F2;font-weight:700;font-size:18px}
+.ws-total{background:var(--ice);border-radius:12px;padding:14px;margin-top:14px}
+.ws-total div{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ws-total span{font-family:var(--cond);font-weight:700;font-size:20px}
+.ws-total strong{font-family:var(--display);font-size:32px;color:var(--red)}
+.ws-total small{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+.admin-sec{background:var(--ice)}
+.adm{background:var(--white);border:3px solid var(--navy);border-radius:18px;padding:22px}
+.adm h2{margin:0 0 4px}
+.adm h3{font-family:var(--cond);font-size:24px;margin:24px 0 8px}
+.adm-head p{margin:0;color:var(--muted)}
+.adm-scroll{overflow-x:auto}
+.adm-t{width:100%;border-collapse:collapse;font-size:16px;min-width:480px}
+.adm-t th{text-align:left;background:var(--navy);color:var(--white);padding:8px 10px;font-family:var(--cond);font-size:16px}
+.adm-t td{padding:8px 10px;border-bottom:1px solid #D5DEEA}
+.adm-t tr.you td{background:#FFF3D6;font-weight:700}
+.adm-note{font-size:14px;color:var(--muted);margin:8px 0 0}
+.calc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.calc label{font-weight:700;font-size:15px}
+.calc select,.calc input{margin-top:4px}
+.calc-out{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.calc-out div{background:var(--ice);border-radius:12px;padding:12px}
+.calc-out span{display:block;font-size:14px;color:var(--muted);font-weight:700}
+.calc-out strong{font-family:var(--display);font-size:26px;color:var(--navy)}
+.ord-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.ord-bar .btn{padding:10px 18px;font-size:17px}
+.ord{border:2px solid #D5DEEA;border-radius:12px;padding:12px;margin-bottom:10px}
+.ord-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.chip{font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--amber);color:var(--navy)}
+.chip[data-s="Paid"]{background:#2E8B57;color:#fff}.chip[data-s="Delivered"]{background:var(--navy);color:#fff}
+.ord-meta{font-size:14px;color:var(--muted);margin-top:4px}
+.ord-items{font-size:15px;margin-top:4px}
+.ord-btns{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.ord-btns button{font:inherit;font-size:14px;font-weight:700;border:2px solid var(--navy);background:#fff;color:var(--navy);border-radius:8px;padding:6px 12px;cursor:pointer}
+@media (max-width:760px){.calc,.calc-out{grid-template-columns:minmax(0,1fr)}}
+.safety{font-size:15px;color:var(--muted)}
+.safety h2{font-size:30px}
+.safety ul{padding-left:20px;max-width:70ch}
+footer{background:var(--navy);color:#C9D6EA;padding:28px 0;font-size:15px;text-align:center}
+footer a{color:var(--white)}
+.thanks{display:none;font-size:18px}
+.thanks.show{display:block}
+.thanks b{font-family:var(--cond);font-size:26px;display:block;color:var(--navy)}
+
+/* AGE GATE */
+.gate{position:fixed;inset:0;background:rgba(19,40,74,.96);z-index:50;display:flex;align-items:center;justify-content:center;padding:24px}
+.gate[hidden]{display:none}
+.gate-box{background:var(--white);border-radius:20px;padding:30px;max-width:400px;text-align:center}
+.gate-box h2{font-size:34px}
+.gate-box .btn{width:100%;margin-top:10px}
+.gate-box button.no{background:none;border:none;color:var(--muted);text-decoration:underline;font:inherit;margin-top:12px;cursor:pointer}
+
+.cartbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;align-items:center;justify-content:space-between;gap:12px;
+  background:var(--navy);color:var(--white);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));box-shadow:0 -4px 16px rgba(19,40,74,.3)}
+.cartbar.show{display:flex}
+.cartbar span{font-family:var(--cond);font-weight:700;font-size:18px}
+.cartbar strong{font-family:var(--display);font-size:24px;color:var(--amber);display:block;line-height:1}
+.cartbar .btn{padding:12px 20px;font-size:18px}
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .hero{padding-top:16px}
+  .hero-grid,.ws-grid,.menu,.fields,.tiers{grid-template-columns:minmax(0,1fr)}
+  .hero-grid{gap:8px;padding:12px 0 44px;text-align:center}
+  .hero h1{font-size:clamp(44px,15vw,64px);text-shadow:3px 3px 0 var(--red)}
+  .hero p{margin:0 auto 20px;font-size:17px}
+  .mascot{max-width:210px;order:-1}
+  .topbar{font-size:14px}
+  .topbar a{padding:6px 10px}
+  .hero .btn{display:block;width:100%;text-align:center}
+  .btn.ghost{margin:10px 0 0}
+  section{padding:40px 0}
+  .item{padding:20px 16px}
+  .item h3{font-size:25px}
+  .price{font-size:30px}
+  .qty button{width:48px;height:48px}
+  .order,.ws-form{padding:18px 14px}
+  .total strong{font-size:32px}
+  .order>.btn,.ws-form .btn{width:100%}
+  .paybtns a{flex:1 1 100%}
+  .perks li{font-size:17px}
+  body.has-cart{padding-bottom:84px}
+}
+@media (min-width:761px){.cartbar{display:none!important}}
+</style>
+</head>
+<body>
+
+<!-- Netlify Forms needs these forms in the HTML at deploy time -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="gate-box">
+    <h2 id="gateTitle">21+ only</h2>
+    <p>Boner Bears are an adult product. Confirm your age to continue.</p>
+    <button class="btn" id="gateYes">I'm 21 or older</button>
+    <button class="no" id="gateNo">I'm under 21</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <span>Seymore Green · Roslindale</span>
+      <a href="tel:18444739667">844-4-SEYMOR</a>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>Boner<br>Bears</h1>
+        <p>Enhancement gummies for him and her, in stock at 35 Poplar St. Order here, pay your way, pick up at the shop.</p>
+        <a class="btn" href="#order">Order now</a>
+        <a class="btn ghost" href="#wholesale">Stores: buy wholesale</a>
+      </div>
+      <div class="mascot" aria-hidden="true">
+        <!-- Original BB bear mascot -->
+        <svg viewBox="0 0 320 340" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gummy" cx="40%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#FFD36B"/><stop offset="1" stop-color="#E08A00"/>
+            </radialGradient>
+          </defs>
+          <!-- body -->
+          <ellipse cx="160" cy="290" rx="92" ry="60" fill="url(#gummy)"/>
+          <ellipse cx="135" cy="275" rx="26" ry="16" fill="#fff" opacity=".28"/>
+          <!-- ears -->
+          <circle cx="76" cy="118" r="34" fill="url(#gummy)"/>
+          <circle cx="244" cy="118" r="34" fill="url(#gummy)"/>
+          <circle cx="76" cy="118" r="16" fill="#C46F00"/>
+          <circle cx="244" cy="118" r="16" fill="#C46F00"/>
+          <!-- head -->
+          <circle cx="160" cy="180" r="100" fill="url(#gummy)"/>
+          <ellipse cx="122" cy="140" rx="30" ry="18" fill="#fff" opacity=".3"/>
+          <!-- cap crown -->
+          <path d="M62 148 C62 70 258 70 258 148 Z" fill="#13284A"/>
+          <path d="M160 74 L160 148" stroke="#1E3A66" stroke-width="3"/>
+          <circle cx="160" cy="76" r="7" fill="#D2232A"/>
+          <!-- cap brim, cocked -->
+          <path d="M56 146 C110 132 230 130 290 150 C250 170 120 172 56 160 Z" fill="#D2232A"/>
+          <!-- BB letters -->
+          <text x="160" y="134" text-anchor="middle" font-family="Bowlby One, Impact, sans-serif" font-size="52"
+                fill="#D2232A" stroke="#FFFFFF" stroke-width="3" paint-order="stroke" letter-spacing="-2">BB</text>
+          <!-- eyes: one wink -->
+          <circle cx="124" cy="192" r="10" fill="#13284A"/>
+          <circle cx="127" cy="189" r="3" fill="#fff"/>
+          <path d="M186 192 Q198 182 210 192" stroke="#13284A" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <!-- snout + grin -->
+          <ellipse cx="160" cy="228" rx="46" ry="34" fill="#FFE3A3"/>
+          <ellipse cx="160" cy="214" rx="15" ry="10" fill="#13284A"/>
+          <path d="M134 236 Q160 262 188 234" stroke="#13284A" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <!-- arms: thumbs up -->
+          <ellipse cx="74" cy="270" rx="22" ry="30" fill="url(#gummy)" transform="rotate(-25 74 270)"/>
+          <ellipse cx="250" cy="262" rx="22" ry="30" fill="url(#gummy)" transform="rotate(20 250 262)"/>
+          <rect x="258" y="218" width="14" height="30" rx="7" fill="#E89A10"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="order">
+  <div class="wrap">
+    <h2>Pick your bag</h2>
+    <p class="sub">Retail orders are pickup only at Seymore Green, 35 Poplar St, Roslindale. We text you when it's bagged and ready.</p>
+
+    <div class="menu">
+      <article class="item">
+        <h3>Boner Bears Original</h3>
+        <p class="desc">The classic male enhancement gummy.</p>
+        <div class="row">
+          <div class="price">$19.99 <small>/ bag</small></div>
+          <div class="qty" data-sku="original">
+            <button type="button" aria-label="Remove one Original">−</button>
+            <output aria-live="polite">0</output>
+            <button type="button" aria-label="Add one Original">+</button>
+          </div>
+        </div>
+      </article>
+      <article class="item bliss">
+        <span class="tag" style="background:#C2397E">For her</span>
+        <h3>Bliss Bears</h3>
+        <p class="desc">Female enhancement gummies from the Boner Bears makers.</p>
+        <div class="row">
+          <div class="price">$19.99 <small>/ bag</small></div>
+          <div class="qty" data-sku="bliss">
+            <button type="button" aria-label="Remove one Bliss Bears">−</button>
+            <output aria-live="polite">0</output>
+            <button type="button" aria-label="Add one Bliss Bears">+</button>
+          </div>
+        </div>
+      </article>
+      <article class="item xl">
+        <span class="tag">New</span>
+        <h3>Extra Strength XL</h3>
+        <p class="desc">4 gummies per bag. One gummy is one dose.</p>
+        <div class="row">
+          <div class="price">$24.95 <small>/ bag</small></div>
+          <div class="qty" data-sku="xl">
+            <button type="button" aria-label="Remove one Extra Strength XL">−</button>
+            <output aria-live="polite">0</output>
+            <button type="button" aria-label="Add one Extra Strength XL">+</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <form class="order" name="bb-retail-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="retailForm">
+      <input type="hidden" name="form-name" value="bb-retail-order">
+      <p hidden><label>Leave blank <input name="bot-field"></label></p>
+      <input type="hidden" name="original_qty" id="f_original">
+      <input type="hidden" name="xl_qty" id="f_xl">
+      <input type="hidden" name="bliss_qty" id="f_bliss">
+      <input type="hidden" name="order_total" id="f_total">
+
+      <div class="total"><span>Your total</span><strong id="totalOut">$0.00</strong></div>
+
+      <div class="fields">
+        <div><label for="r_name">Name</label><input id="r_name" name="name" autocomplete="name" required></div>
+        <div><label for="r_phone">Cell for pickup text</label><input id="r_phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div><label for="r_pay">How you'll pay</label>
+          <select id="r_pay" name="payment_method" required>
+            <option value="Cash App">Cash App</option>
+            <option value="Venmo">Venmo</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Pay at pickup">Cash or card at pickup</option>
+          </select></div>
+        <div><label for="r_when">When you're coming</label>
+          <select id="r_when" name="pickup_time">
+            <option>Today</option><option>Tomorrow</option><option>This week</option>
+          </select></div>
+      </div>
+      <label class="check"><input type="checkbox" name="age_confirmed" value="yes" required> I'm 21+ and I'll show ID at pickup.</label>
+      <button class="btn" type="submit">Place my order</button>
+      <p class="err" id="retailErr" role="alert"></p>
+
+      <div class="pay" id="payBox">
+        <h3>Order received</h3>
+        <p id="payMsg">Send your payment below and we'll text you when it's ready.</p>
+        <div class="paybtns">
+          <a class="cash" id="payCash" href="#" target="_blank" rel="noopener">Cash App</a>
+          <a class="venmo" id="payVenmo" href="#" target="_blank" rel="noopener">Venmo</a>
+          <a class="paypal" id="payPaypal" href="mailto:orders@seymoregreen.com?subject=PayPal%20invoice%20for%20Boner%20Bears">PayPal</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="wholesale" id="wholesale">
+  <div class="wrap">
+    <h2>Stock it in your store</h2>
+    <p class="sub">Liquor stores, corner stores, smoke shops, barbershops: buy by the box, hand-delivered around Boston. Each box is a counter display of 20 bags, and the more boxes you take, the better your price.</p>
+
+    <div class="ws-lock" id="wsLock">
+      <h3>Wholesale accounts only</h3>
+      <p>Enter your store access code to see box pricing and order. Need a code? Call or text <a href="tel:18444739667">844-4-SEYMOR</a>.</p>
+      <form id="lockForm" autocomplete="off">
+        <label for="wsCode" class="sr">Access code</label>
+        <input id="wsCode" inputmode="numeric" maxlength="7" placeholder="Code" aria-describedby="lockErr">
+        <button class="btn" type="submit">Unlock</button>
+      </form>
+      <p class="err" id="lockErr" role="alert"></p>
+    </div>
+    <div id="wsPrivate"></div>
+    <!-- Static copy so Netlify detects the wholesale form at deploy. No prices. -->
+    <form name="bb-wholesale" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field"><input name="original_boxes"><input name="bliss_boxes"><input name="xl_boxes"><input name="price_tier"><input name="wholesale_total">
+      <input name="business"><input name="contact_name"><input name="phone"><input name="payment_method"><input name="address"><textarea name="notes"></textarea>
+    </form>
+  </div>
+</section>
+
+<section class="safety">
+  <div class="wrap">
+    <h2>Before you take it</h2>
+    <ul>
+      <li>Adults 21+ only. Keep out of reach of children.</li>
+      <li>Don't combine with nitrate medications (like nitroglycerin) or other enhancement products.</li>
+      <li>Talk to a doctor first if you have a heart condition, high or low blood pressure, or take prescription meds.</li>
+      <li>Follow the dose on the package. Start with one.</li>
+      <li>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</li>
+    </ul>
+  </div>
+</section>
+<section class="admin-sec" id="admin" hidden>
+  <div class="wrap">
+    <div class="ws-lock" id="admLock">
+      <h3>Owner login</h3>
+      <form id="admForm" autocomplete="off">
+        <label for="admPin" class="sr">Owner PIN</label>
+        <input id="admPin" type="password" inputmode="numeric" maxlength="8" placeholder="PIN">
+        <button class="btn" type="submit">Open</button>
+      </form>
+      <p class="err" id="admErr" role="alert"></p>
+    </div>
+    <div id="admPrivate"></div>
+  </div>
+</section>
+</main>
+
+<div class="cartbar" id="cartbar" aria-live="polite">
+  <div><span id="cartCount">0 bags</span><strong id="cartTotal">$0.00</strong></div>
+  <a class="btn" href="#retailForm">Checkout</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    Seymore Green · 35 Poplar St, Roslindale, MA 02131<br>
+    <a href="tel:18444739667">844-4-SEYMOR</a> · <a href="mailto:orders@seymoregreen.com">orders@seymoregreen.com</a><br>
+    Cash App $iseymoregreen · Venmo @seymore-green<br>
+    <a href="#admin" id="ownerLink" style="opacity:.6;font-size:13px">Owner login</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Age gate
+  var gate=document.getElementById('gate');
+  var ok=false; try{ok=localStorage.getItem('bb_age_ok')==='1'}catch(e){}
+  if(ok) gate.hidden=true;
+  document.getElementById('gateYes').onclick=function(){try{localStorage.setItem('bb_age_ok','1')}catch(e){} gate.hidden=true;};
+  document.getElementById('gateNo').onclick=function(){location.href='https://www.google.com';};
+
+  // Cart
+  var PRICES={original:19.99, xl:24.95, bliss:19.99};
+  var cart={original:0, xl:0, bliss:0};
+  function money(n){return '$'+n.toFixed(2)}
+  function total(){return cart.original*PRICES.original + cart.xl*PRICES.xl + cart.bliss*PRICES.bliss}
+  function render(){
+    document.querySelectorAll('.qty').forEach(function(q){q.querySelector('output').textContent=cart[q.dataset.sku]});
+    document.getElementById('totalOut').textContent=money(total());
+    var n=cart.original+cart.xl+cart.bliss, bar=document.getElementById('cartbar');
+    document.getElementById('cartCount').textContent=n+(n===1?' bag':' bags');
+    document.getElementById('cartTotal').textContent=money(total());
+    bar.classList.toggle('show',n>0 && !placed);
+    document.body.classList.toggle('has-cart',n>0 && !placed);
+  }
+  var placed=false;
+  document.querySelectorAll('.qty').forEach(function(q){
+    var b=q.querySelectorAll('button');
+    b[0].onclick=function(){cart[q.dataset.sku]=Math.max(0,cart[q.dataset.sku]-1);render()};
+    b[1].onclick=function(){cart[q.dataset.sku]=Math.min(20,cart[q.dataset.sku]+1);render()};
+  });
+
+  function encode(form){return new URLSearchParams(new FormData(form)).toString()}
+  // Google Sheet orders (Apps Script). Paste your web app URL between the quotes.
+  var SCRIPT_URL='https://script.google.com/macros/s/AKfycbxWvDsN67degnSRo67tcXdVgWG5254BNKo0NcyqRjbpQSEt2JWdlZLNoIh0BsLmrhrRCg/exec';
+  function toSheet(data){
+    if(!SCRIPT_URL) return Promise.reject(new Error('no sheet'));
+    return fetch(SCRIPT_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r; });
+  }
+  // An order counts as sent if it reached the Google Sheet OR Netlify Forms.
+  function sendOrder(form,data){
+    return new Promise(function(resolve,reject){
+      var left=2, done=false;
+      function ok(){ if(!done){done=true;resolve();} }
+      function fail(){ if(--left===0 && !done) reject(new Error('both failed')); }
+      post(form).then(ok,fail);
+      toSheet(data).then(ok,fail);
+    });
+  }
+  function post(form){
+    return fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:encode(form)})
+      .then(function(r){if(!r.ok) throw new Error(r.status)});
+  }
+
+  // Retail order
+  var rf=document.getElementById('retailForm'), rErr=document.getElementById('retailErr');
+  rf.addEventListener('submit',function(e){
+    e.preventDefault(); rErr.textContent='';
+    var t=total();
+    if(t<=0){rErr.textContent='Add at least one bag to place your order.';return;}
+    document.getElementById('f_original').value=cart.original;
+    document.getElementById('f_xl').value=cart.xl;
+    document.getElementById('f_bliss').value=cart.bliss;
+    document.getElementById('f_total').value=t.toFixed(2);
+    var btn=rf.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Placing order…';
+    sendOrder(rf,{type:'retail',who:rf.name.value,phone:rf.phone.value,items:'Original x'+cart.original+', Bliss x'+cart.bliss+', XL x'+cart.xl,total:total().toFixed(2),payment:rf.payment_method.value,notes:'Pickup: '+rf.pickup_time.value}).then(function(){
+      var amt=t.toFixed(2), method=rf.payment_method.value;
+      document.getElementById('payCash').href='https://cash.app/$iseymoregreen/'+amt;
+      document.getElementById('payVenmo').href='https://venmo.com/seymore-green?txn=pay&amount='+amt+'&note=Boner%20Bears%20order';
+      document.getElementById('payMsg').textContent = method==='Pay at pickup'
+        ? 'Your total is '+money(t)+'. Pay at the counter when you pick up. We\u2019ll text you when it\u2019s ready.'
+        : 'Your total is '+money(t)+'. Send it below and we\u2019ll text you when it\u2019s ready.';
+      document.getElementById('payBox').classList.add('show');
+      btn.textContent='Order placed'; placed=true; render();
+    }).catch(function(){
+      btn.disabled=false; btn.textContent='Place my order';
+      rErr.textContent='Your order didn\u2019t go through. Check your connection and try again, or call 844-4-SEYMOR.';
+    });
+  });
+
+  // Wholesale (locked behind access code; pricing is encrypted)
+  var LOCK={salt:"/BctWR5fBWiVnGQKKcgU9A==",iv:"VY1yW2V5mqyRlah5",ct:"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"};
+  function b64(x){return Uint8Array.from(atob(x),function(c){return c.charCodeAt(0)})}
+  function unlock(code){
+    var enc=new TextEncoder();
+    return crypto.subtle.importKey('raw',enc.encode(code),'PBKDF2',false,['deriveKey'])
+      .then(function(k){return crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(LOCK.salt),iterations:250000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt'])})
+      .then(function(key){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64(LOCK.iv)},key,b64(LOCK.ct))})
+      .then(function(buf){return JSON.parse(new TextDecoder().decode(buf))});
+  }
+  function openWholesale(P){
+    document.getElementById('wsLock').hidden=true;
+    document.getElementById('wsPrivate').innerHTML=P.html;
+    initWholesale(P);
+  }
+  var lf=document.getElementById('lockForm'), le=document.getElementById('lockErr');
+  lf.addEventListener('submit',function(e){
+    e.preventDefault(); le.textContent='';
+    var code=document.getElementById('wsCode').value.replace(/\D/g,'');
+    var btn=lf.querySelector('button'); btn.disabled=true; btn.textContent='Checking…';
+    unlock(code).then(function(P){
+      try{sessionStorage.setItem('bb_ws',code)}catch(e){}
+      openWholesale(P);
+    }).catch(function(){
+      btn.disabled=false; btn.textContent='Unlock';
+      le.textContent='That code didn\u2019t work. Call 844-4-SEYMOR for access.';
+    });
+  });
+  try{var saved=sessionStorage.getItem('bb_ws'); if(saved) unlock(saved).then(openWholesale).catch(function(){});}catch(e){}
+
+  function initWholesale(P){
+  var WS=P.WS, RETAIL=P.RETAIL;
+  var ws={o:0,b:0,x:0};
+  function tierOf(n){return n>=5?3:n>=3?2:n>=2?1:0}
+  function wsRender(){
+    document.querySelectorAll('.qty[data-ws]').forEach(function(q){q.querySelector('output').textContent=ws[q.dataset.ws]});
+    var n=ws.o+ws.b+ws.x, t=tierOf(n);
+    document.querySelectorAll('.tier-table tr[data-t]').forEach(function(r){r.classList.toggle('on',+r.dataset.t===t)});
+    var total=ws.o*WS.o[t]+ws.b*WS.b[t]+ws.x*WS.x[t];
+    var names=['Minimum 2 boxes','2-box price','3–4 box price','5+ box price'];
+    document.getElementById('wsTier').textContent=n+(n===1?' box':' boxes')+' · '+names[t];
+    document.getElementById('wsTotal').textContent=t?'$'+total.toLocaleString():'$0';
+    var sales=ws.o*RETAIL.o+ws.b*RETAIL.b+ws.x*RETAIL.x;
+    document.getElementById('wsProfit').textContent=t
+      ? 'Sells for $'+sales.toFixed(2)+' at retail. Your profit: about $'+(sales-total).toFixed(2)+'.'
+      : (n===1?'Add one more box to unlock wholesale pricing.':'Add boxes to see your price and profit.');
+    document.getElementById('w_o').value=ws.o;
+    document.getElementById('w_x').value=ws.x;
+    document.getElementById('w_b').value=ws.b;
+    document.getElementById('w_tier').value=names[t];
+    document.getElementById('w_total').value=t?total:0;
+  }
+  document.querySelectorAll('.qty[data-ws]').forEach(function(q){
+    var b=q.querySelectorAll('button');
+    b[0].onclick=function(){ws[q.dataset.ws]=Math.max(0,ws[q.dataset.ws]-1);wsRender()};
+    b[1].onclick=function(){ws[q.dataset.ws]=Math.min(50,ws[q.dataset.ws]+1);wsRender()};
+  });
+  wsRender();
+  var wf=document.getElementById('wsForm'), wErr=document.getElementById('wsErr');
+  wf.addEventListener('submit',function(e){
+    e.preventDefault(); wErr.textContent='';
+    if(ws.o+ws.b+ws.x<2){wErr.textContent='Wholesale starts at 2 boxes. Add at least one more.';return;}
+    var btn=wf.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Sending…';
+    sendOrder(wf,{type:'wholesale',who:wf.business.value,contact:wf.contact_name.value,phone:wf.phone.value,address:wf.address.value,items:'Original boxes x'+ws.o+', Bliss boxes x'+ws.b+', XL boxes x'+ws.x,total:String(document.getElementById('w_total').value),payment:wf.payment_method.value,notes:wf.notes.value}).then(function(){
+      document.getElementById('wsFields').hidden=true;
+      document.getElementById('wsThanks').classList.add('show');
+    }).catch(function(){
+      btn.disabled=false; btn.textContent='Place wholesale order';
+      wErr.textContent='Your order didn\u2019t send. Try again, or call 844-4-SEYMOR.';
+    });
+  });
+  }
+
+  // Owner dashboard (PIN-locked; contents encrypted)
+  var ADM={salt:"L3844M9FSn+Bjxb50p7HXA==",iv:"QDKGbXgImJvKmcxN",ct:"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"};
+  function showAdminIfHash(){var sec=document.getElementById('admin'); if(location.hash==='#admin'){sec.hidden=false; sec.scrollIntoView();}}
+  window.addEventListener('hashchange',showAdminIfHash); showAdminIfHash();
+  function unlockAdm(pin){
+    var enc=new TextEncoder();
+    return crypto.subtle.importKey('raw',enc.encode(pin),'PBKDF2',false,['deriveKey'])
+      .then(function(k){return crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(ADM.salt),iterations:250000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt'])})
+      .then(function(key){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64(ADM.iv)},key,b64(ADM.ct))})
+      .then(function(buf){return JSON.parse(new TextDecoder().decode(buf))});
+  }
+  function openAdmin(C){
+    document.getElementById('admLock').hidden=true;
+    document.getElementById('admPrivate').innerHTML=C.html;
+    var $=function(id){return document.getElementById(id)};
+    var money=function(n){return (n<0?'-$':'$')+Math.abs(n).toFixed(2).replace(/\.00$/,'')};
+    var defaults={o:160,b:160,x:180};
+    $('cProd').onchange=function(){ $('cPrice').value=defaults[$('cProd').value]; calc(); };
+    ['cBoxes','cPrice','cCost','cShip'].forEach(function(id){$(id).oninput=calc});
+    function calc(){
+      var k=$('cProd').value, n=Math.max(0,+$('cBoxes').value||0), price=+$('cPrice').value||0, cost=(+$('cCost').value||0)+(+$('cShip').value||0);
+      var total=n*price, profit=n*(price-cost);
+      $('oTotal').textContent=money(total);
+      $('oProfit').textContent=money(profit);
+      $('oStoreHi').textContent=money(n*(C.retailHi[k]*20-price));
+      $('oStoreLo').textContent=money(n*(C.msrp[k]*20-price));
+      var w='';
+      if(price<cost) w='Below your cost plus shipping. You lose money on this deal.';
+      else if(price<C.companyWholesaleBox[k]) w='Below AT Distro\u2019s own wholesale price. Save this for big orders.';
+      $('oWarn').textContent=w;
+    }
+    calc();
+    // Orders from Google Sheet
+    function loadOrders(){
+      if(!SCRIPT_URL){ $('ordSum').textContent='Orders sheet not connected yet. Paste your Apps Script URL into SCRIPT_URL.'; return; }
+      $('ordSum').textContent='Loading…';
+      fetch(SCRIPT_URL+'?key='+encodeURIComponent(C.key)).then(function(r){return r.json()}).then(function(d){
+        if(!d.ok) throw new Error(d.error||'error');
+        var open=d.orders.filter(function(o){return o.status!=='Delivered'}).length;
+        $('ordSum').textContent=d.orders.length+' orders · '+open+' open';
+        $('ordList').innerHTML='';
+        d.orders.forEach(function(o){
+          var card=document.createElement('div'); card.className='ord';
+          var t=new Date(o.time); var when=isNaN(t)?'':t.toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+          card.innerHTML='<div class="ord-top"><b></b><span class="chip"></span></div><div class="ord-meta"></div><div class="ord-items"></div><div class="ord-btns"></div>';
+          card.querySelector('b').textContent=(o.type==='wholesale'?'Wholesale · ':'Retail · ')+(o.who||'');
+          var chip=card.querySelector('.chip'); chip.textContent=o.status||'New'; chip.dataset.s=o.status||'New';
+          card.querySelector('.ord-meta').textContent=[when,o.phone,o.address].filter(Boolean).join(' · ');
+          card.querySelector('.ord-items').textContent=[o.items,o.total?'Total $'+o.total:'',o.payment].filter(Boolean).join(' · ');
+          ['Paid','Delivered'].forEach(function(st){
+            var b=document.createElement('button'); b.type='button'; b.textContent='Mark '+st.toLowerCase();
+            b.onclick=function(){ b.disabled=true;
+              fetch(SCRIPT_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'status',key:C.key,id:o.id,status:st})})
+                .then(function(r){return r.json()}).then(function(){ chip.textContent=st; chip.dataset.s=st; b.disabled=false; })
+                .catch(function(){ b.disabled=false; $('ordSum').textContent='Could not update. Check your connection.'; });
+            };
+            card.querySelector('.ord-btns').appendChild(b);
+          });
+          $('ordList').appendChild(card);
+        });
+      }).catch(function(){ $('ordSum').textContent='Could not load orders. Check the Apps Script URL and key.'; });
+    }
+    $('ordRefresh').onclick=loadOrders; loadOrders();
+  }
+  var af=document.getElementById('admForm'), ae=document.getElementById('admErr');
+  af.addEventListener('submit',function(e){
+    e.preventDefault(); ae.textContent='';
+    var pin=document.getElementById('admPin').value.replace(/\D/g,'');
+    var btn=af.querySelector('button'); btn.disabled=true; btn.textContent='Checking…';
+    unlockAdm(pin).then(openAdmin).catch(function(){btn.disabled=false; btn.textContent='Open'; ae.textContent='Wrong PIN.';});
+  });
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) { window.addEventListener('load', function(){ navigator.serviceWorker.register('/sw.js').catch(function(){}); }); }
+</script>
+</body>
+</html>
